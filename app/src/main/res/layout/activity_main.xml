@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:text="Id"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:id="@+id/textId" tools:text="Id"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editId"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+                android:text="Name"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:id="@+id/textName"
+                tools:text="Name"/>
+
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editName"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:id="@+id/textType"
+                android:text="Type"/>
+        <RadioGroup android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/RadioGroup">
+            <RadioButton
+                android:text="Type 1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioType1"/>
+            <RadioButton
+                android:text="Type 2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioType2"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+                android:text="Image"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textImage" tools:text="Image"/>
+        <ImageView
+                android:layout_width="78dp"
+                android:layout_height="70dp" tools:srcCompat="@tools:sample/backgrounds/scenic[0]"
+                android:id="@+id/imageView"/>
+        <Button
+                android:text="Get image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonPicture"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+    <Button
+            android:text="SELECT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" tools:layout_editor_absoluteY="266dp"
+            tools:layout_editor_absoluteX="7dp" android:id="@+id/buttonSelect"/>
+    <Button
+            android:text="INSERT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" tools:layout_editor_absoluteY="266dp"
+            tools:layout_editor_absoluteX="107dp" android:id="@+id/buttonInsert"/>
+    <Button
+            android:text="UPDATE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" tools:layout_editor_absoluteY="266dp"
+            tools:layout_editor_absoluteX="207dp" android:id="@+id/buttonUpdate"/>
+    <Button
+            android:text="DELETE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" tools:layout_editor_absoluteY="266dp"
+            tools:layout_editor_absoluteX="306dp" android:id="@+id/buttonDelete"/>
+    </LinearLayout>
+    <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+</LinearLayout>
